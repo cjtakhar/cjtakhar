@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 6em;
+  font-family: 'Economica', sans-serif;
+  letter-spacing: 15px;
+  font-weight: bold;
+}
+
+h2 {
+  color: white;
+  font-size: 2.5em;
+  font-family: 'Economica', sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  color: black;
+  font-size: 2.5em;
+  font-family: 'Economica', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+  line-height: 2;
+}
+
+/* Containers */
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+.parralax {
+  background-image: url("images/background-img.jpg");
+  height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Navbar */
+
+.navbar {
+  padding: 1% 5% 0 5%;
+  font-family: 'Economica', sans-serif;
+  font-size: 1.2em;
+}
+
+/* Social Media */
+
+.social-media {
+  color: white;
+  text-align: right;
+  font-size: 1em
+}
+
+.fab {
+  margin: 2em;
+  color: white;
+}
+
+/* Title */
+
+.heading {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.line {
+  width: 210px;
+  border-bottom: solid 5px white;
+  margin-left: 10%;
+  position: absolute;
+}
+
+.bio {
+  margin-left: 12%;
+  padding-top: 10%;
+  font-family: 'Economica', sans-serif;
+}
+
+.btn {
+  margin-left: 12%;
+  margin-top: 2%;
+  font-family: 'Economica', sans-serif;
+  font-size: 1em;
+  background-color: black;
+}
+
+/* Intro */
+
+.cj-photo {
+  box-shadow: 10px 10px 5px #e6e6e6;
+}
+
+.intro {
+  margin: 10%;
+}
+
+.intro-heading {
+  color: black;
+  text-align: left;
+}
+
+.intro-text {
+  text-align: left;
+  margin-top: 5%;
+  padding-top: 5%;
+  margin-right: 15%;
+}
+
+.line-2 {
+  width: 100px;
+  border-bottom: solid 3px black;
+  position: absolute;
+}
+
+/* Skills */
+.parralax-2 {
+background-image: url("images/bluebg.jpg");
+height: 1000px;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.skills {
+  margin: 5%;
+  text-align: center;
+}
+.skills-headline {
+  text-align: left;
+  margin-top: 10%;
+  font-size: 4em;
+}
+.skills-headline-2 {
+  margin-top: 10%;
+  color: black;
+  text-align: left;
+}
+.skills-tagline {
+  text-align: left;
+  margin-top: 8%;
+  color: black;
+}
+.skills-explained {
+  margin-top: 5%;
+}
+.line-3 {
+  width: 210px;
+  border-bottom: solid 5px white;
+  position: absolute;
+}
+.line-4 {
+  width: 100px;
+  border-bottom: solid 3px black;
+}
+.skill-icon {
+  font-size: 3.5em;
+}
+.icons {
+  margin-top: 5%;
+}
+.webdev-img {
+  margin-top: 10%;
+  margin-left: 15%;
+  height: 350px;
+  width: 350px;
+}
+/* Portfolio */
+
+.portfolio {
+  margin-top: 10%;
+}
+
+.portfolio-headline {
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size: 4em;
+}
+
+.parralax-3 {
+background-image: url("images/bluebg.jpg");
+height: 1000px;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/* Footer */
+.copyright {
+}
+.footer {
+  margin: 10%;
+  text-align: center;
+}
+
+.line-5 {
+  width: 210px;
+  border-bottom: solid 5px white;
+  margin-left: 5%;
+}
+
+.tagline {
+  margin-bottom: 10%;
+}
