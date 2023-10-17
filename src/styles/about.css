@@ -1,0 +1,46 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        align-items:first baseline;
+        justify-content: first baseline;
+    }
+    .about-info {
+        width: 100%;
+    }
+    .about-title {
+        margin: 1rem 2rem;
+    }
+    .about-text {
+        margin: 1rem 2rem;
+    }
+}

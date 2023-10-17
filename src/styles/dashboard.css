@@ -1,0 +1,107 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.title {
+    color: #fbfbff;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-size: 5rem;
+  }
+  
+  .subtitle {
+    color: #fbfbff;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+  }
+
+  .cjtakhar-img {
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.about-btn {
+    width: 250px;
+    height: 50px;
+    font-size: 1.3rem;
+    border: solid 1px white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #11102c;
+    opacity: 0.8;
+    letter-spacing: .5em;
+    transition: all 0.5s ease-in-out;
+}
+
+.about-btn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 55px;
+    list-style: none;
+}
+
+.social-icon {
+    color: white;
+    font-size: 2rem;
+    margin: 0 40px;
+    transition: transform 0.5s ease-in-out;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .dashboard-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .title-container {
+        width: 100%;
+    }
+    .img-container {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .title {
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+      }
+}
