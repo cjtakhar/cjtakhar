@@ -14,7 +14,7 @@ const Navigation = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <h1 className="navbar-logo">
-          <Link to="/cjtakhar">
+          <Link className="logo" to="/cjtakhar">
             <FaPaperPlane />
           </Link>
         </h1>
@@ -23,6 +23,7 @@ const Navigation = () => {
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
+        <div className="nav-menu-container">
         <ul className={`nav-menu ${showMenu ? "active" : ""}`}>
           <li className="nav-item">
             <Link to="/portfolio">Portfolio</Link>
@@ -34,6 +35,7 @@ const Navigation = () => {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
+        </div>
       </div>
     </nav>
   );

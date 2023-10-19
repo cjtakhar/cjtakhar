@@ -1,13 +1,37 @@
 .navbar {
     background-color: transparent;
-    width: 100%;
 }
 
 .navbar-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding:0 2rem;
     color: white;
+}
+
+.nav-menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    margin: 30px 20px;
+    transition: transform 0.5s ease-in-out;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 1;
 }
 
 .nav-menu {
@@ -16,7 +40,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
 }
 
 .nav-item {
