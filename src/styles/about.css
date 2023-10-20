@@ -18,6 +18,7 @@
     font-weight: 200;
     margin-bottom: 1rem;
     letter-spacing: 0.5rem;
+    animation: slideIn 1s forwards;
 }
 
 .about-text {
@@ -25,9 +26,6 @@
     font-weight: 200;
     margin-bottom: 1rem;
     letter-spacing: 0.1rem;
-}
-
-.about-slide-in {
     animation: slideIn 1s forwards;
 }
 

@@ -20,9 +20,11 @@ const Dashboard = () => {
       <div className="title-container">
         <h1 className="title">CJ Takhar</h1>
         <h2 className="subtitle">Software Engineer</h2>
+        <div className="button-slide-up">
         <Link to="/about">
-          <button className="about-btn button-slide-up">My Story</button>
+          <button className="about-btn">My Story</button>
         </Link>
+        </div>
       </div>
       <div className="img-container">
         <img className="cjtakhar-img" src={Image} alt="CJ Takhar"></img>
