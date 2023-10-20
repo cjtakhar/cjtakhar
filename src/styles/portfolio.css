@@ -1,0 +1,119 @@
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.project {
+    margin: 1%; 
+}
+
+.a1 {
+    animation: slideLeft 1s forwards;
+}
+
+.a2 {
+    animation: slideRight 1s forwards;
+    animation-delay: .2s;
+}
+
+.a3 {
+    animation: slideLeft 1s forwards;
+    animation-delay: .4s;
+}
+
+.a4 {
+    animation: slideRight 1s forwards;
+    animation-delay: .6s;
+}
+
+.a5 {
+    animation: slideLeft 1s forwards;
+    animation-delay: .8s;
+}
+
+.a6 {
+    animation: slideRight 1s forwards;
+    animation-delay: 1s;
+}
+
+.a7 {
+    animation: slideLeft 1s forwards;
+    animation-delay: 1.2s;
+}
+
+.project-link {
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+    font-size: 5rem;
+    transition: opacity 0.3s ease-in-out;
+    letter-spacing: 0.8rem;
+
+}
+
+.project-link:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        margin: 10% 0;
+    }
+    .project-link {
+        font-size: 3rem;
+    }
+}
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px); /* Slide in from the top */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide in to the final position */
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%); /* Slide in from the right */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Slide in to the final position */
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%); /* Slide up from the bottom */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide up to the final position */
+    }
+  }
+
+  @keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%); /* Slide in from the left */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Slide in to the final position */
+    }
+  }
