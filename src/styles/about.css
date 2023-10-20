@@ -27,12 +27,17 @@
     letter-spacing: 0.1rem;
 }
 
+.about-slide-in {
+    animation: slideIn 1s forwards;
+}
+
 @media (max-width: 768px) {
     .about-container {
         display: flex;
         flex-direction: row;
         align-items:first baseline;
         justify-content: first baseline;
+        margin-top: 2rem;
     }
     .about-info {
         width: 100%;
@@ -44,3 +49,14 @@
         margin: 1rem 2rem;
     }
 }
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px); /* Slide in from the top */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide in to the final position */
+    }
+  }

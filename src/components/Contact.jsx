@@ -21,14 +21,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container contact-slide-in">
       <div className="contact-form">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <input
+              className="input"
               type="text"
               id="name"
               name="name"
+              placeholder="name"
               value={formData.name}
               onChange={handleInputChange}
               required
@@ -36,9 +38,11 @@ const Contact = () => {
           </div>
           <div className="form-group">
             <input
+              className="input"
               type="email"
               id="email"
               name="email"
+              placeholder="email"
               value={formData.email}
               onChange={handleInputChange}
               required
@@ -46,23 +50,28 @@ const Contact = () => {
           </div>
           <div className="form-group">
             <input
+              className="input"
               type="tel"
               id="phone"
               name="phone"
+              placeholder="phone"
               value={formData.phone}
               onChange={handleInputChange}
             />
           </div>
           <div className="form-group">
             <textarea
+              className="input"
               id="message"
               name="message"
+              placeholder="message"
               value={formData.message}
               onChange={handleInputChange}
               required
             />
+            <button className="btn-submit" type="submit">Submit</button>
+
           </div>
-          <button type="submit">Submit</button>
         </form>
       </div>
     </div>

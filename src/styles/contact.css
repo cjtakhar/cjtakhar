@@ -3,5 +3,71 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 3rem 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input {
+    background: transparent;
+    border: solid 1px white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 1rem 0;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.input:focus {
+    outline: none;
+    color: white;
+}
+
+.btn-submit {
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    border: solid 1px white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #11102c;
+    opacity: 0.8;
+    letter-spacing: .5em;
+    transition: all 0.5s ease-in-out;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.contact-slide-in {
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px); /* Slide in from the top */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide in to the final position */
+    }
+  }
