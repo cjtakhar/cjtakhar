@@ -31,20 +31,20 @@
   color: white;
   list-style: none;
   display: flex;
-  flex-direction: column; /* Display the menu items vertically */
+  flex-direction: row; /* Display the menu items vertically */
   position: relative; /* Add position relative to the container */
 }
 
 .menu-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  margin-right: 45px;
 }
 
 .nav-menu.active {
   display: flex;
-  flex-direction: column; /* Add any styling for the expanded menu items here */
+  flex-direction: row; /* Add any styling for the expanded menu items here */
   animation: slideIn 0.5s forwards; /* Apply a sliding animation */
 }
 
@@ -87,7 +87,7 @@
 /* Style the navigation menu for screens larger than 768px */
 @media (min-width: 769px) {
   .nav-menu {
-    flex-direction: column; /* Display the menu items horizontally */
+    flex-direction: row; /* Display the menu items horizontally */
   }
 
   .menu-toggle {
