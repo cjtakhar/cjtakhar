@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaPaperPlane } from "react-icons/fa";
-import { FaBars } from "react-icons/fa";
+import { FaPaperPlane, FaBars } from "react-icons/fa";
 import "../styles/navigation.css";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
+
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  useEffect(() => {
+    if (showMenu) {
+      document.body.classList.add("body-menu-open");
+    } else {
+      document.body.classList.remove("body-menu-open");
+    }
+  }, [showMenu]);
 
   return (
     <nav className="navbar">

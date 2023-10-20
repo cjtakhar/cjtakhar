@@ -43,6 +43,13 @@
     justify-content: center;
     position: relative; /* Add position relative to the container */
   }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: row;
+    /* Add any styling for the expanded menu items here */
+    animation: slideIn 0.5s forwards; /* Apply a sliding animation */
+  }
   
   .nav-item {
     padding: 0 5rem;
@@ -108,23 +115,33 @@
   }
   
   .menu-toggle.active {
-    /* Add your styling for the active (expanded) hamburger icon here */
+    color: purple;
   }
   
   /* Media query: Hide the menu items when the screen width is less than 768px */
   @media (max-width: 768px) {
+
     .nav-menu {
       display: flex;
       flex-direction: row;  /* Display the menu items vertically */
       position: absolute;
-      top: 70px; /* Adjust the vertical position as needed */
+      top: 30px; /* Adjust the vertical position as needed */
       left: 0; /* Adjust the horizontal position as needed */
       width: 100%; /* Make the menu take the full width of the screen */
     }
   
     /* Show the collapsed menu items when the hamburger button is active */
     .nav-menu.active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
       /* Add any styling for the expanded menu items here */
+    }
+
+    .nav-item {
+      margin: 3px;
     }
 
     .logo {
@@ -132,3 +149,13 @@
     }
   }
   
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100%); /* Slide in from the left */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Slide in to the final position */
+    }
+  }

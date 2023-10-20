@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 5% 0;
+    width: 100%;
 }
 
 .dash-header {
@@ -94,6 +95,31 @@
     opacity: 1;
 }
 
+/* Animation class for the title */
+.title-slide-in {
+    animation: slideIn 1s forwards;
+  }
+  
+  /* Animation class for the subtitle */
+  .subtitle-slide-in {
+    animation: slideIn 1s forwards;
+  }
+  
+  /* Animation class for the image */
+  .slide-in-right {
+    animation: slideRight 1s forwards;
+  }
+  
+  /* Animation class for the button */
+  .button-slide-up {
+    animation: slideUp 1s forwards;
+  }
+
+  .social-container-slide-up {
+    animation: slideUp 1s forwards;
+  }
+  
+
 @media (max-width: 750px) {
     .dash-header {
         display: flex;
@@ -107,6 +133,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 10px;
     }
     .img-container {
         width: 100%;
@@ -143,4 +170,37 @@
         width: 100%;
         margin-top: 25px;
     }
+}
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px); /* Slide in from the top */
     }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide in to the final position */
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%); /* Slide in from the right */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Slide in to the final position */
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%); /* Slide up from the bottom */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide up to the final position */
+    }
+  }

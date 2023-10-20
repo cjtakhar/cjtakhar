@@ -1,11 +1,19 @@
 import "../styles/dashboard.css";
+import { useEffect } from "react";
 import Image from "../images/cjtakhar.jpeg";
 import { BsGithub } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
+
 const Dashboard = () => {
+  useEffect(() => {
+    document.querySelector(".title").classList.add("title-slide-in");
+    document.querySelector(".subtitle").classList.add("subtitle-slide-in");
+    document.querySelector(".img-container").classList.add("slide-in-right");
+    document.querySelector(".about-btn").classList.add("button-slide-in");
+  }, []);
   return (
     <div className="dashboard-container">
       <div className="dash-header">
@@ -13,7 +21,7 @@ const Dashboard = () => {
         <h1 className="title">CJ Takhar</h1>
         <h2 className="subtitle">Software Engineer</h2>
         <Link to="/about">
-          <button className="about-btn">My Story</button>
+          <button className="about-btn button-slide-up">My Story</button>
         </Link>
       </div>
       <div className="img-container">
