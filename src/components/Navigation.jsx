@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaPaperPlane, FaBars } from "react-icons/fa";
+import { FaCodeBranch, FaBars } from "react-icons/fa";
 import "../styles/navigation.css";
 
 const Navigation = () => {
@@ -27,7 +27,7 @@ const Navigation = () => {
       <div className="navbar-container">
         <h1 className="navbar-logo">
           <Link className="logo" to="/cjtakhar">
-            <FaPaperPlane />
+            <FaCodeBranch />
           </Link>
         </h1>
         <div
