@@ -31,6 +31,7 @@ const Contact = () => {
               id="name"
               name="name"
               placeholder="name"
+              autocomplete="off"
               value={formData.name}
               onChange={handleInputChange}
               required
@@ -43,6 +44,7 @@ const Contact = () => {
               id="email"
               name="email"
               placeholder="email"
+              autocomplete="off"
               value={formData.email}
               onChange={handleInputChange}
               required
@@ -55,6 +57,7 @@ const Contact = () => {
               id="phone"
               name="phone"
               placeholder="phone"
+              autocomplete="off"
               value={formData.phone}
               onChange={handleInputChange}
             />
@@ -65,6 +68,7 @@ const Contact = () => {
               id="message"
               name="message"
               placeholder="message"
+               autocomplete="off"
               value={formData.message}
               onChange={handleInputChange}
               required

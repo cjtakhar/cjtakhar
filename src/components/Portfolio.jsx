@@ -2,6 +2,10 @@ import '../styles/portfolio.css';
 import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
+    const handleLinkClick = (e) => {
+        e.preventDefault();
+        window.location.reload();
+    }
     return (
         <div className="portfolio-container">
             <div className="portfolio">

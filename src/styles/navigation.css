@@ -1,161 +1,127 @@
 /* CSS for navigation bar */
 .navbar {
-    background-color: transparent;
-    margin-top: 20px;
-  }
-  
-  .navbar-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-    color: white;
-    position: relative; /* Add position relative to the container */
-  }
-  
-  .nav-menu-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logo {
-    color: white;
-    font-size: 1.5rem;
-    margin: 30px 20px;
-    transition: transform 0.5s ease-in-out;
-    text-decoration: none;
-    opacity: 0.8;
-  }
-  
-  .logo:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-    opacity: 1;
-  }
-  
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  color: white;
+  position: relative; /* Add position relative to the container */
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.5s ease-in-out;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.nav-menu {
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Display the menu items vertically */
+  position: relative; /* Add position relative to the container */
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-menu.active {
+  display: flex;
+  flex-direction: column; /* Add any styling for the expanded menu items here */
+  animation: slideIn 0.5s forwards; /* Apply a sliding animation */
+}
+
+.nav-item {
+  margin: 5px ;
+  text-transform: uppercase;
+}
+
+.fabars {
+  font-size: 1.5rem;
+  font-weight: 200;
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+  margin-top: 10px;
+}
+
+.fabars:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nav-item a {
+  font-weight: 200;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
+}
+
+.nav-item a:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+/* Style visited links (if needed) */
+.nav-item a:visited {
+  color: white;
+}
+
+/* Style the navigation menu for screens larger than 768px */
+@media (min-width: 769px) {
   .nav-menu {
-    color: white;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative; /* Add position relative to the container */
+    flex-direction: column; /* Display the menu items horizontally */
   }
 
-  .nav-menu.active {
-    display: flex;
-    flex-direction: row;
-    /* Add any styling for the expanded menu items here */
-    animation: slideIn 0.5s forwards; /* Apply a sliding animation */
-  }
-  
-  .nav-item {
-    padding: 0 5rem;
-    text-transform: uppercase;
-  }
-
-  .fabars {
-    font-size: 1.5rem;
-    font-weight: 200;
-    opacity: 0.8;
-    transition: all 0.5s ease-in-out;
-    margin-top: 20px;
-  }
-
-  .fabars:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
-  
-  .nav-item a {
-    font-weight: 200;
-    text-decoration: none;
-    color: white;
-    transition: all 0.5s ease-in-out;
-    opacity: 0.8;
-  }
-  
-  .nav-item a:hover {
-    cursor: pointer;
-    opacity: 1;
-  }
-  
-  /* Style visited links (if needed) */
-  .nav-item a:visited {
-    color: white;
-  }
-  
-  /* Style the navigation menu for screens larger than 768px */
-  @media (min-width: 769px) {
-    .nav-menu {
-      display: flex;
-      flex-direction: row; /* Display the menu items horizontally */
-    }
-  
-    .menu-toggle {
-      display: none; /* Hide the hamburger button for screens larger than 768px */
-    }
-  }
-  
-  /* Style the collapsed menu items as hidden by default and the hamburger button */
-  .nav-menu.hidden {
-    display: none;
-  }
-  
   .menu-toggle {
-    display: block;
-    cursor: pointer;
-    /* Add your styling for the hamburger icon here */
-    position: fixed; /* Keep the hamburger button in the same place */
-    top: 20px; /* Adjust the vertical position as needed */
-    right: 20px; /* Adjust the horizontal position as needed */
-    z-index: 2; /* Ensure the button appears above the content */
+    display: none; /* Hide the hamburger button for screens larger than 768px */
   }
-  
-  .menu-toggle.active {
-    color: purple;
-  }
-  
-  /* Media query: Hide the menu items when the screen width is less than 768px */
-  @media (max-width: 768px) {
+}
 
-    .nav-menu {
-      display: flex;
-      flex-direction: row;  /* Display the menu items vertically */
-      position: absolute;
-      top: 30px; /* Adjust the vertical position as needed */
-      left: 0; /* Adjust the horizontal position as needed */
-      width: 100%; /* Make the menu take the full width of the screen */
-    }
-  
-    /* Show the collapsed menu items when the hamburger button is active */
-    .nav-menu.active {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    
-      /* Add any styling for the expanded menu items here */
-    }
+/* Style the collapsed menu items as hidden by default and the hamburger button */
+.nav-menu.hidden {
+  display: none;
+}
 
-    .nav-item {
-      margin: 3px;
-    }
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+  /* Add your styling for the hamburger icon here */
+  position: fixed; /* Keep the hamburger button in the same place */
+  top: 20px; /* Adjust the vertical position as needed */
+  right: 20px; /* Adjust the horizontal position as needed */
+  z-index: 2; /* Ensure the button appears above the content */
+}
 
-    .logo {
-      font-size: 1.2rem;
-    }
+.menu-toggle.active {
+  color: rgb(119, 97, 231);
+  opacity: 0.8;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%); /* Slide in from the left */
   }
-  
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateX(-100%); /* Slide in from the left */
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0); /* Slide in to the final position */
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Slide in to the final position */
   }
+}

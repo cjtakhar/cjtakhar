@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     width: 50%;
-    margin: 3rem 0;
+    margin: 5rem 0;
 }
 
 .form-group {
@@ -20,9 +20,11 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    color: white;
 }
 
 .input {
+    color: white;
     background: transparent;
     border: solid 1px white;
     border-top: none;
@@ -33,9 +35,16 @@
     text-align: center;
 }
 
+.input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
 .input:focus {
     outline: none;
     color: white;
+    text-align: left;
+    
 }
 
 .btn-submit {

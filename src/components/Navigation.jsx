@@ -10,6 +10,10 @@ const Navigation = () => {
     setShowMenu(!showMenu);
   };
 
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+
   useEffect(() => {
     if (showMenu) {
       document.body.classList.add("body-menu-open");
@@ -30,19 +34,27 @@ const Navigation = () => {
           className={`menu-toggle ${showMenu ? "active" : ""}`}
           onClick={toggleMenu}
         >
-          <FaBars className="fabars" /> 
+          <FaBars className="fabars" />
         </div>
+        <div className="menu-container">
         <ul className={`nav-menu ${showMenu ? "active" : "hidden"}`}>
           <li className="nav-item">
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/portfolio" onClick={closeMenu}>
+              Portfolio
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={closeMenu}>
+              About
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={closeMenu}>
+              Contact
+            </Link>
           </li>
         </ul>
+        </div>
       </div>
     </nav>
   );
