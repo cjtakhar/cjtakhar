@@ -12,7 +12,7 @@ function App() {
       < BrowserRouter >
         <Navigation />
         <Routes>
-          <Route path="/cjtakhar" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
