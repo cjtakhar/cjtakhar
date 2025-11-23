@@ -4,8 +4,8 @@ I'm a **San Francisco–based software engineer** working across
 **machine learning**, **data engineering**, and **full-stack development**.  
 I build **end-to-end AI systems** that combine fine-tuned LLMs, scalable data pipelines, and modern web applications.
 
-My work spans everything from **LoRA fine-tuning and model serving** to **backend APIs**,  
-**data processing pipelines**, and **React front ends**. I love taking ideas from zero  
+My work spans everything from LLM fine-tuning and model serving** to **backend APIs**,  
+**data processing pipelines**, and **front end architecture**. I love taking ideas from zero  
 to production and designing systems where models, data, and user experience fit together cleanly.
 
 I'm especially interested in **ethical, human-centered AI** and enjoy building tools that help  
