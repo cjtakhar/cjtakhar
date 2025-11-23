@@ -26,7 +26,7 @@ const Navigation = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <h1 className="navbar-logo">
-          <Link className="logo" to="/cjtakhar">
+          <Link className="logo" to="/">
             <FaCodeBranch />
           </Link>
         </h1>
