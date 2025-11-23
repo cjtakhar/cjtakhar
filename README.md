@@ -1,4 +1,4 @@
-## 👋 Hey, I’m CJ.
+## Hey, I’m CJ.
 
 I'm a **San Francisco–based software engineer** working across  
 **machine learning**, **data engineering**, and **full-stack development**.  
