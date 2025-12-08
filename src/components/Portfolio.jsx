@@ -10,25 +10,19 @@ const Portfolio = () => {
         <div className="portfolio-container">
             <div className="portfolio">
                 <div className="project a1">
-                    <Link className="project-link" to="https://joinneon.com">Neon</Link>
+                    <Link className="project-link" to="https://stayclassy.ai">ClassyAI</Link>
                 </div>
                 <div className="project a2">
-                    <Link className="project-link" to="https://cjtakhar.github.io/storymap/">Story Map</Link>
+                    <Link className="project-link" to="https://github.com/cjtakhar/nextbuy">NextBuy</Link>
                 </div>
                 <div className="project a3">
-                    <Link className="project-link" to="https://cjtakhar.github.io/air-q/">Air Q</Link>
+                    <Link className="project-link" to="https://github.com/cjtakhar/nyc-taxi">TaxiData</Link>
                 </div>
                 <div className="project a4">
-                    <Link className="project-link" to="https://cjtakhar.github.io/msg/">MSG</Link>
+                    <Link className="project-link" to="https://cjtakhar.github.io/gem-ui/">ChatBot</Link>
                 </div>
                 <div className="project a5">
-                    <Link className="project-link" to="https://cjtakhar.github.io/AMA-AI/">AMA-AI</Link>
-                </div>
-                <div className="project a6">
-                    <Link className="project-link" to="https://cjtakhar.github.io/moonphase/">MoonPhase</Link>
-                </div>
-                <div className="project a7">
-                    <Link className="project-link" to="https://cjtakhar.github.io/sports-trivia/">Trivia</Link>
+                    <Link className="project-link" to="https://cjtakhar.github.io/tetris/">Tetris</Link>
                 </div>
             </div>
         </div>
