@@ -6,11 +6,11 @@ const About = () => {
             <div className="about-info">
                 <h2 className="about-title">About</h2>
                   <p className="about-text">
-                    I'm an AI and Machine Learning Engineer based in San Francisco incubating at Harvard Innovation Labs. I operate at the nexus of systems architecture and ethical human-centered AI. My expertise spans the full technical stack—from orchestrating complex data pipelines and fine-tuning models to architecting scalable full-stack applications.
+                    I'm an AI and Machine Learning Engineer based in San Francisco incubating at <a href="https://innovationlabs.harvard.edu/" target="_blank" rel="noopener noreferrer" className="about-link">Harvard Innovation Labs.</a> I operate at the nexus of systems architecture and ethical human-centered AI. My expertise spans the full technical stack—from orchestrating complex data pipelines and fine-tuning models to architecting scalable full-stack applications.
                 </p>
 
                 <p className="about-text">
-                    Currently, I'm Founder and CEO of <a href="https://stayclassy.ai" target="_blank" rel="noopener noreferrer" className="about-link">Classy AI</a>, a Socratic learning platform powered by a custom fine-tuned reasoning modeling using research-backed methodology to prevent hallucinations. Classy AI has been selected as a Harvard President's Innovation Challenge 2026 Semifinalist. 
+                    Currently, I'm Founder and CEO of <a href="https://stayclassy.ai" target="_blank" rel="noopener noreferrer" className="about-link">Classy AI</a>, a Socratic learning platform powered by a custom fine-tuned reasoning modeling using research-backed methodology to prevent hallucinations. Classy AI has been selected as a <a href="https://innovationlabs.harvard.edu/presidents-innovation-challenge" target="_blank" rel="noopener noreferrer" className="about-link">Harvard President's Innovation Challenge Semifinalist</a>. 
                 </p>
 
                 <p className="about-text">
