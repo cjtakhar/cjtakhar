@@ -6,15 +6,15 @@ const About = () => {
             <div className="about-info">
                 <h2 className="about-title">About</h2>
                 <p className="about-text">
-                    I'm an AI and Machine Learning Engineer based in San Francisco operating at the nexus of robust systems architecture and human-centered design. My expertise spans the full technical stack—from orchestrating complex data pipelines and fine-tuning models to architecting scalable full-stack applications.
+                    I'm an AI and Machine Learning Engineer based in San Francisco inbubated at Harvard Innovation Labs. I operate at the nexus of systems architecture and human-centered AI. My expertise spans the full technical stack—from orchestrating complex data pipelines and fine-tuning models to architecting scalable full-stack applications.
                 </p>
 
                 <p className="about-text">
-                    Currently, I'm building <a href="https://stayclassy.ai" target="_blank" rel="noopener noreferrer" className="about-link">Classy AI</a>, a Socratic learning platform powered by a custom fine-tuned reasoning model. I'm dedicated to building technology that champions integrity and deep conceptual understanding.
+                    Currently, I'm Founder and CEO of <a href="https://stayclassy.ai" target="_blank" rel="noopener noreferrer" className="about-link">Classy AI</a>, a Socratic learning platform powered by a custom fine-tuned research-backed reasoning model. Classy AI has been selected as a Harvard President's Innovation Challenege 2026 Semifinalist. 
                 </p>
 
                 <p className="about-text">
-                    I'm driven by the conviction that AI should serve to elevate intelligence rather than replace it. I prioritize clean, maintainable code and durable system design to create tools that enhance what humans are capable of.
+                    I'm driven by the notion that anything is possible and I'm dedicated to building ethical systems that enhance what humans are capable of. 
                 </p>
             </div>
         </div>
