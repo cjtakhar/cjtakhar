@@ -18,7 +18,7 @@ const Dashboard = () => {
       <div className="dash-header">
         <div className="title-container">
           <h1 className="title">CJ Takhar</h1>
-          <h2 className="subtitle">Software Engineer</h2>
+          <h2 className="subtitle">Founder & Engineer</h2>
           <div className="button-stack">
   <div className="button-slide-up delay-0">
     <Link to="/about">
