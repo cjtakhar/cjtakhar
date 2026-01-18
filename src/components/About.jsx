@@ -6,7 +6,7 @@ const About = () => {
             <div className="about-info">
                 <h2 className="about-title">About</h2>
                 <p className="about-text">
-                    I'm an AI and Machine Learning Engineer based in San Francisco inbubated at Harvard Innovation Labs. I operate at the nexus of systems architecture and human-centered AI. My expertise spans the full technical stack—from orchestrating complex data pipelines and fine-tuning models to architecting scalable full-stack applications.
+                    I'm an AI and Machine Learning Engineer based in San Francisco incubated at Harvard Innovation Labs. I operate at the nexus of systems architecture and human-centered AI. My expertise spans the full technical stack—from orchestrating complex data pipelines and fine-tuning models to architecting scalable full-stack applications.
                 </p>
 
                 <p className="about-text">
