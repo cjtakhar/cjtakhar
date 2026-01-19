@@ -91,14 +91,13 @@
   animation-delay: 0.2s;
 }
 
-
 .social-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     list-style: none;
-    margin-top: 15px;
+    margin-top: 35px;
     width: 50%;
 }
 
