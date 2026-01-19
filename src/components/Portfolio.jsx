@@ -25,7 +25,7 @@ const Portfolio = () => {
                     </a>
                 </div>
                 <div className="project a5">
-                    <a className="project-link" href="https://ktakhar.com/">
+                    <a className="project-link" href="https://cjtakhar.github.io/tetris/">
                         Tetris
                     </a>
                 </div>
