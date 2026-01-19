@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     min-height: 60vh;
+    margin-bottom: 4rem;
 }
 
 .about-info {
@@ -41,6 +42,9 @@
 }
 
 @media (max-width: 768px) {
+    body {
+    background-attachment: scroll;
+  }
     .about-container {
         display: flex;
         flex-direction: column;

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   background: linear-gradient(to bottom, #11102c, #1b1a5f);
@@ -6,4 +10,5 @@ body {
   background-attachment: fixed;
   overflow-y: auto;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
