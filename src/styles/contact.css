@@ -1,93 +1,38 @@
+/* Contact email styles */
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    margin: 5rem 0;
+.contact-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white; /* ← key line */
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    color: white;
+.contact-text {
+  font-size: 1.1rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.75rem;
+  color: white; /* explicit */
+  animation: slideIn 1s forwards;
 }
 
-.input {
-    color: white;
-    background: transparent;
-    border: solid 1px white;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin: 1rem 0;
-    opacity: 0.8;
-    text-align: center;
+.contact-email-link {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.15rem;
+  color: white; /* explicit */
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  transition: opacity 150ms ease;
+  animation: slideIn 1s forwards;
 }
 
-.input::placeholder {
-    color: white;
-    opacity: 0.8;
+.contact-email-link:hover {
+  opacity: 0.75;
 }
-
-.input:focus {
-    outline: none;
-    color: white;
-    text-align: left;
-    
-}
-
-.btn-submit {
-    width: 150px;
-    height: 40px;
-    font-size: 1rem;
-    border: solid 1px white;
-    border-radius: 5px;
-    text-transform: uppercase;
-    color: #11102c;
-    opacity: 0.8;
-    letter-spacing: .5em;
-    transition: all 0.5s ease-in-out;
-    margin-top: 1rem;
-}
-
-.btn-submit:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-
-.contact-slide-in {
-    animation: slideIn 1s forwards;
-}
-
-@keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(-50px); /* Slide in from the top */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); /* Slide in to the final position */
-    }
-  }
-
-@keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(-50px); /* Slide in from the top */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); /* Slide in to the final position */
-    }
-  }
