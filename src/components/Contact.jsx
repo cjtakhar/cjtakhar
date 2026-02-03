@@ -1,82 +1,14 @@
-import React, { useState } from 'react';
-import '../styles/contact.css';
+import "../styles/contact.css";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // You can handle form submission here, e.g., sending the data to a server.
-    console.log(formData);
-  };
-
   return (
     <div className="contact-container contact-slide-in">
-      <div className="contact-form">
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <input
-              className="input"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="name"
-              autocomplete="off"
-              value={formData.name}
-              onChange={handleInputChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <input
-              className="input"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="email"
-              autocomplete="off"
-              value={formData.email}
-              onChange={handleInputChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <input
-              className="input"
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="phone"
-              autocomplete="off"
-              value={formData.phone}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div className="form-group">
-            <textarea
-              className="input"
-              id="message"
-              name="message"
-              placeholder="message"
-               autocomplete="off"
-              value={formData.message}
-              onChange={handleInputChange}
-              required
-            />
-            <button className="btn-submit" type="submit">Submit</button>
+      <div className="contact-email">
+        <p className="contact-text">Want to connect?</p>
 
-          </div>
-        </form>
+        <a className="contact-email-link" href="mailto:kt@stayclassy.ai">
+          kt@stayclassy.ai
+        </a>
       </div>
     </div>
   );

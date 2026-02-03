@@ -80,3 +80,14 @@
       transform: translateY(0); /* Slide in to the final position */
     }
   }
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px); /* Slide in from the top */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide in to the final position */
+    }
+  }
