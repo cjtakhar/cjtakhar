@@ -6,7 +6,7 @@ const Portfolio = () => {
             <div className="portfolio">
                 <div className="project a1">
                     <a className="project-link" href="https://stayclassy.ai" target="_blank" rel="noopener noreferrer">
-                        ClassyAI
+                        Classy AI
                     </a>
                 </div>
                 <div className="project a2">

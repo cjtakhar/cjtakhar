@@ -57,7 +57,7 @@
     font-size: 5rem;
     transition: opacity 0.3s ease-in-out;
     letter-spacing: 0.8rem;
-
+    white-space: nowrap;
 }
 
 .project-link:hover {
