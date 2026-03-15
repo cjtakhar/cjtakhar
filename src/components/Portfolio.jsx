@@ -10,18 +10,18 @@ const Portfolio = () => {
                     </a>
                 </div>
                 <div className="project a2">
+                    <a className="project-link" href="https://heyparallel.ai/" target="_blank" rel="noopener noreferrer">
+                        Parallel AI
+                    </a>
+                </div>
+                <div className="project a3">
                     <a className="project-link" href="https://github.com/cjtakhar/nextbuy" target="_blank" rel="noopener noreferrer">
                         NextBuy
                     </a>
                 </div>
-                <div className="project a3">
+                <div className="project a4">
                     <a className="project-link" href="https://github.com/cjtakhar/nyc-taxi" target="_blank" rel="noopener noreferrer">
                         TaxiData
-                    </a>
-                </div>
-                <div className="project a4">
-                    <a className="project-link" href="https://cjtakhar.github.io/gem-ui/" target="_blank" rel="noopener noreferrer">
-                        ChatBot
                     </a>
                 </div>
                 <div className="project a5">
