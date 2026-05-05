@@ -1,6 +1,6 @@
 ## Hey.
 
-I'm a **San Francisco based founder and engineer** working across  
+I'm a **San Francisco based founder and engineer** incubating at Harvard Innovation Labs working across  
 **machine learning**, **data engineering**, and **fullstack development**.  
 I build **end to end AI systems** that combine fine tuned LLMs, scalable data pipelines, and modern web applications.
 
