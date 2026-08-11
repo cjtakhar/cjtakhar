@@ -45,7 +45,7 @@ const Dashboard = () => {
           </Link>
         </li>
         <li className="social-icon">
-          <Link className="icon" to="https://www.linkedin.com/in/cjtakhar/">
+          <Link className="icon" to="https://www.linkedin.com/in/takhar/">
             <AiOutlineLinkedin />
           </Link>
         </li>
